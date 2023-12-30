@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get CRUD</title>
+    <style>
+        table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+          <th>Email</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Address</th>
+        </tr>
+
+        <% for(var i=0; i < datatable.length; i++) { %>
+            <tr>
+              <td><%= datatable[i].email %></td>
+              <td><%= datatable[i].firstName %></td>
+              <td><%= datatable[i].lastName %></td>
+              <td><%= datatable[i].address %></td>
+            </tr>
+         <% } %>
+         
+      </table>
+</body>
+</html>
